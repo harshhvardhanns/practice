@@ -1,0 +1,14 @@
+name: "hello world workflow"
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  hello_world_jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "printing the hello world text from the ubuntu runner by GitHub"
+        run: echo "Hello World by GitHub Actions"
+      - name: "printing the date"
+        run: date
